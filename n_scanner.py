@@ -8,8 +8,10 @@ def scann(ip):
     #                                 **************************************************}
 
     RequestOf_ARP = scap.ARP(pdst=ip)
+    brodcast = scap.Ether(dst='ff:ff:ff:ff:ff:ff')
+    RequestOf_ARP_brodcast = brodcast/RequestOf_ARP
     print("*" * 50)
-    print(RequestOf_ARP.summary())
+    print(RequestOf_ARP_brodcast.summary())
     print("*" * 50)
     #scap.ls(scap.ARP()) #  this for lis options your intrested
 
