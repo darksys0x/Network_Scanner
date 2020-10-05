@@ -4,7 +4,7 @@ import scapy.all as scap
 
 
 def scann(ip):
-    #creat ARP request directry to brodcast MAC asking for IP
+    #creat ARP request directry to brodcast MAC asking for IP,,
   
     RequestOf_ARP = scap.ARP(pdst=ip)
     brodcast = scap.Ether(dst='ff:ff:ff:ff:ff:ff')
