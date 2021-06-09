@@ -1,5 +1,5 @@
 # Network Scanner
-### This is tool for used scanning about all machines in the network through ARP request and then get IPs of a devices and MAC address.
+### A network scanner is a tool to act scanning approximately all machines over a network through the ARP request, which has ability to get IPs of the devices and MAC address.
 
 # used : 
 ```
